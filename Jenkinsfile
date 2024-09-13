@@ -1,21 +1,19 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
-            steps {
-                echo "Hello World"
-            }
-        }
         stage('GitCheckout') {
             steps {
-                echo "Mid"
-                print "Hello"
+                echo "Git Checkout"
+            }
+        }
+        stage('build') {
+            steps {
+                echo "Build stage"
             }
         }
         stage('end') {
             steps {
-                echo "end"
-                println "HI"
+                echo "end stage"
             }
         }
     }
