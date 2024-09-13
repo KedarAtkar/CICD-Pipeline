@@ -9,11 +9,13 @@ pipeline {
         stage('GitCheckout') {
             steps {
                 sh 'echo "Mid"'
+                print "Hello"
             }
         }
         stage('end') {
             steps {
                 sh 'echo "end"'
+                println "HI"
             }
         }
     }
