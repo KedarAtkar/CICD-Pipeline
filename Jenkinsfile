@@ -3,18 +3,18 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "Hello World"'
+                sh echo "Hello World"
             }
         }
         stage('GitCheckout') {
             steps {
-                sh 'echo "Mid"'
+                sh echo "Mid"
                 print "Hello"
             }
         }
         stage('end') {
             steps {
-                sh 'echo "end"'
+                echo "end"
                 println "HI"
             }
         }
